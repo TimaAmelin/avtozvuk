@@ -1,0 +1,303 @@
+@import "~bootstrap/scss/bootstrap";
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+		-moz-border-radius: $radius;
+		-ms-border-radius: $radius;
+			border-radius: $radius;
+}
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+	monospace;
+}
+
+.login{
+	width: 300px;
+	margin: 0 auto;
+	height: fit-content;
+	@include border-radius(30px);
+}
+
+.login-header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 300px;
+	margin: 0 auto;
+	height: 150px;
+	@include border-radius(30px);
+}
+
+.login-body{
+	display: flex;
+	justify-content: center;
+	align-items: 300px;
+	margin: 0 auto;
+	height: 250px;
+	@include border-radius(30px);
+}
+
+.registration-header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 300px;
+	margin: 0 auto;
+	height: 150px;
+	@include border-radius(30px);
+}
+
+.registration-body{
+	display: flex;
+	justify-content: center;
+	align-items: 300px;
+	margin: 0 auto;
+	height: 500px;
+	@include border-radius(30px);
+}
+
+.login-form{
+	width: 250px;
+}
+
+.inner-shadow{
+	box-shadow: inset 0 0 10px #c3c3c3;
+}
+
+.centered{
+	margin: 0 auto;
+}
+
+.catalog{
+	width: 100%;
+	height: fit-content;
+}
+
+.categories{
+	width: 20%;
+	height: fit-content;
+}
+
+.btn-toolbar{
+	width: 222px;
+}
+
+.btn-group-vertical{
+	width: 222px;
+}
+
+.categories-btn{
+	width: 222px;
+	background-color: white;
+	border-color: rgba(0, 0, 0, 0.125);
+	color: black;
+	text-align: left;
+
+	&:hover{
+		background-color: #cd0000;
+		border-color: rgba(0, 0, 0, 0.125);
+		color: white;
+	}
+}
+
+.catalog{
+	width:100%;
+	height: fit-content;
+}
+
+.pagination-holder{
+	width: 30%;
+	margin-left: 10px;
+}
+
+.page-item.active .page-link{
+	background-color:#ed0000;
+	border-color: #ed0000;
+	cursor:pointer;
+}
+
+.page-item:hover .page-link{
+
+	&:hover{
+		background-color: #cd0000;
+		border-color: rgba(0, 0, 0, 0.125);
+		color: white;
+	}
+}
+
+.page-link{
+	color: #ed0000;
+}
+
+.search-form{
+	width: 60%;
+}
+
+.search{
+	margin: 10px;
+	width: 100%;
+}
+
+.search-btn{
+	width: 8%;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+.clear-search-btn{
+	width: 11%;
+	margin: 10px;
+}
+
+.goods-container{
+	width: 80%;
+	height: fit-content;
+    justify-content: space-between;
+}
+
+.search-holder{
+	width: 80%;
+	height: fit-content;
+}
+
+.card{
+	height: 400px;
+	min-width: 200px;
+	margin: 10px;
+
+	&:hover {
+		box-shadow: 0 1px 8px 0 rgba(0, 0, 0, .08);
+	}
+}
+
+.card-title{
+	color: black;
+
+	&:hover{
+		color: #ed0000;
+	}
+}
+
+.profile{
+	width: 100%;
+	height: fit-content;
+}
+
+.profile-header{
+	width: 100%;
+	height: 60px;
+}
+
+.profile-body{
+	width: 100%;
+	height: 500px;
+}
+
+.date-input{
+	height: 38px;
+	width: 540px;
+	border: 1px solid #ced4da;
+	border-radius: 0.25rem;
+    color: #495057;
+}
+
+.item-image-wrapper{
+	width: 50%;
+	height: 50%;
+}
+
+.item-image{
+	width: 100%;
+	height: 100%;
+}
+
+.options{
+	width: 40%;
+	height: fit-content;
+}
+
+.item-specifications{
+	width: 100%;
+	height: fit-content;
+}
+
+.add-to-cart-wrapper{
+	width: 100%;
+	height: 100%;
+}
+
+.card-image-holder{
+	width: 190px;
+	height: 50%;
+	justify-content: center;
+}
+
+.image{
+	max-width: 190px;
+	max-height: 190px;
+	margin: 0 auto;
+}
+
+.price-holder{
+	width: 95%;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.favourite-button{
+	font-size: 12px;
+	width: 158px;
+	height: 40px;
+}
+
+.button{
+	background-color:#ed0000;
+	border-color: #ed0000;
+	color: white;
+	&:hover{
+		color:white;
+		background-color: #bb0000; 
+		border-color: #bb0000;
+	}
+	&:active{
+		color:#bb0000;
+		background-color: white; 
+		border-color: #bb0000;
+	}
+}
+
+.disabled-button{
+	background-color:#a3a3a3;
+	border-color: #a3a3a3;
+	color: black;
+	cursor: default;
+}
+
+.last-container{
+	float:top;
+	margin-top: 100px;
+}
+
+.last-seen-card{
+	float:left
+}
+
+.logo{
+	margin-top:10px;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 30px;
+}
+
+.nav-link{
+	font-size: 20px;
+}

@@ -1,0 +1,42 @@
+CREATE TABLE accounts(
+    id SERIAL PRIMARY KEY,
+    login CHAR(40),
+    first_name CHAR(20),
+    second_name CHAR(20),
+    sex CHAR(10),
+    birth_date CHAR(10),
+    country CHAR(20),
+    region CHAR(20),
+    city CHAR(20),
+    street CHAR(20),
+    building CHAR(10),
+    flat CHAR(10),
+    password CHAR(60)
+);
+
+CREATE TABLE goods(
+    id SERIAL PRIMARY KEY,
+    name CHAR(40),
+    description CHAR(500),
+    image_name CHAR(40),
+    category CHAR(40),
+	price_diler CHAR(30),
+	price_opt CHAR(30),
+	price_rozn CHAR(30)
+);
+
+CREATE TABLE usersLast(
+    id SERIAL PRIMARY KEY,
+    login CHAR(40),
+    last1 CHAR(5),
+    last2 CHAR(5),
+    last3 CHAR(5),
+    last4 CHAR(5),
+    last5 CHAR(5)
+);
+
+CREATE TABLE usersFavourite(
+    id SERIAL PRIMARY KEY,
+    login CHAR(40),
+    liked CHAR(5)
+);
